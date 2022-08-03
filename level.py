@@ -22,7 +22,7 @@ class Level:
                 x = col_index * settings.TILESIZE
                 y = row_index * settings.TILESIZE
                 if settings.WORLD_MAP[row_index][col_index] == 'x':
-                    Tile((x,y), [self.visibile_sprites])
+                    Tile((x,y), [self.visibile_sprites, self.obstacle_sprites])
                 if settings.WORLD_MAP[row_index][col_index] == 'p':
                     Player((x,y), [self.visibile_sprites])
 
