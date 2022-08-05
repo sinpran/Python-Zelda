@@ -25,7 +25,7 @@ class Level:
                 if settings.WORLD_MAP[row_index][col_index] == 'x':
                     Tile((x,y), [self.visibile_sprites, self.obstacle_sprites])
                 if settings.WORLD_MAP[row_index][col_index] == 'p':
-                    self.player = Player((x,y), [self.visibile_sprites])
+                    self.player = Player((x,y), [self.visibile_sprites], self.obstacle_sprites)
 
     def run(self):
         #update and draw game
